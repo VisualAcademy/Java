@@ -2,15 +2,15 @@ import java.util.Scanner;
 
 public class ScannerDemo {
 	public static void main(String[] args) {
-		System.out.print("Á¤¼ö ÀÔ·Â : ");
+		System.out.print("ì •ìˆ˜ ì…ë ¥ : ");
 		Scanner objScanner = new Scanner(System.in);
-		int i = objScanner.nextInt(); // Á¤¼ö¸¦ ÀÔ·Â
-		System.out.printf("Á¤¼ö Ãâ·Â : %d\n", i); // Ãâ·Â 
+		int i = objScanner.nextInt(); // ì •ìˆ˜ë¥¼ ì…ë ¥
+		System.out.printf("ì •ìˆ˜ ì¶œë ¥ : %d\n", i); // ì¶œë ¥ 
 		
-		System.out.print("ÇÑÁÙ ÀÔ·Â : ");
+		System.out.print("í•œì¤„ ì…ë ¥ : ");
 		Scanner myScanner = new Scanner(System.in);
-		String name = myScanner.nextLine().trim(); // ÇÑÁÙ ÀĞ±â
-		System.out.printf("ÇÑÁÙ Ãâ·Â : %s\n", name);
+		String name = myScanner.nextLine().trim(); // í•œì¤„ ì½ê¸°
+		System.out.printf("í•œì¤„ ì¶œë ¥ : %s\n", name);
 		
 		Scanner scan = new Scanner("1 2 3");
 		System.out.println(scan.nextInt()); // 1 
