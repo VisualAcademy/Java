@@ -1,0 +1,58 @@
+Java 프로그래밍
+
+절차지향
+	- 기본환경구성
+	- 출력문
+	- 변수(Variable)
+	- 연산자(Operator)
+	- 제어문(Statement)
+		○ 조건문
+		○ 반복문
+		○ 기타
+			§ continue
+			§ break
+	- 배열(Array)
+	- 함수(Function/Method)
+	- 내장 클래스
+
+객체지향
+	- 클래스(Class)
+		○ 자동차 설계도
+		○ 하나의 이름으로 여러 개의 데이터형식 + 기능(메서드)
+	- 인스턴스(Instance) <-> 정적(Static;Shared)
+	- 객체(Object)
+	- 필드(Field) : 전역변수, 멤버변수
+		○ 자동차의 부품 역할
+		○ public -> private : 캡슐화(은닉화;Encapsulation)
+	- 생성자(Constructor)
+		○ 자동차 시동걸기
+		○ 클래스에서 제일 먼저 실행되는 메소드
+			§ 클래스내의 필드 초기화
+	- 소멸자(Destructor)
+		○ 자동차 주차요원이 알아서 주차하고 시동끄기
+		○ GC(Garbage Collector)
+	- 메소드(Method)
+		○ 자동차의 기능(전진, 후진, 좌회전, 우회전)
+	- 메소드 오버로드(오버로딩(Overloading)) : 여러 번 정의
+		○ 동일한 이름의 메소드가 여러 번 정의
+	- 메소드 오버라이드(오버라이딩(Overlide))
+		○ 이미 있는 기능을 새롭게(New) 정의 : 재 정의
+		○ toString() 메소드 Override : 객체명 호출시
+			§ 클래스의 이름이 기본적으로 출력
+
+상속(Inheritance)
+	- 부모 클래스의 모든(protected, public) 멤버를 자식 클래스에서 재 사용(공통/규격 기능 상위 클래스 둠)
+		○ 부모 : super, parent, base
+		○ 자식 : sub, child, derived(파생), …
+	- 클래스 상속
+		○ extends 키워드 단일 상속
+			§ super : 자식 클래스에 부모 클래스의 protected 이상 멤버 접근
+			§ this : 나 자신의 모든 멤버에 접근
+	- 추상 클래스(Abstract Class) : 공통/규격을 제시 + 자체 기능 포함
+	- 인터페이스(Interface) : 공통/규격 제공(강제성)
+		○ 자동차 : 모든 회사의 배터리 +/- 제공
+			§ 배터리 방전 : 다른 회사 차와 브릿지(점프선) 기능으로 시동 걸 수가 있다. 
+	- 인터페이스 상속
+		○ implements 키워드로 다중 상속
+
+
