@@ -11,8 +11,8 @@ public class GroupAlgorithm {
      * 테스트용 레코드 클래스
      */
     public static class Record {
-        private final String name;
-        private final int quantity;
+        private final String name; // 상품명
+        private final int quantity; // 수량
     
         public Record(String name, int quantity) {
             this.name = name;
@@ -29,7 +29,7 @@ public class GroupAlgorithm {
     }
 
     //[0][1] 테스트용 데이터 채우기용 로컬 함수
-    public static List<Record> GetAll() {
+    public static List<Record> getAll() {
         return  Arrays.asList(
             new Record("RADIO", 3),
             new Record("TV", 1),
@@ -42,14 +42,14 @@ public class GroupAlgorithm {
     public static void printData(String message, List<Record> data) {
         System.out.println(message);
         for (Record item : data) {
-            System.out.println(item.getName() + " - " + item.getQuantity());
+            System.out.println(String.format("%5s - %d", item.getName(), item.getQuantity()));
         }
     }
 
     public static void main(String[] args) {
         //[1] Input
-        List<Record> records = GetAll(); // 입력 데이터 
-        List<Record> groups = new ArrayList<Record>();  // 출력 데이터
+        List<Record> records = getAll(); // 입력 데이터 
+        List<Record> groups = new ArrayList<Record>(); // 출력 데이터
         int N = records.size(); // 의사코드
 
         //[2] Process: Group 알고리즘(SORT -> SUM -> GROUP)
