@@ -1,0 +1,10 @@
+String sb = "Spring Boot";
+char[] cs = sb.toCharArray();
+String sb = "Spring Boot";
+char[] cs = sb.toCharArray();
+cs[cs.length]
+cs[cs.length - 1]
+for (var c : cs) {
+    System.out.println(c);
+}
+/save -history c:\temp\StringToCharArray.txt
