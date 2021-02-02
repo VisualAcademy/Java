@@ -1,0 +1,7 @@
+Predicate<String> isNullOrEmpty = (s) -> (s == null || s.length() == 0);
+isNullOrEmpty.test("")
+String str = null;
+isNullOrEmpty.test(str)
+String name = "RedPlus";
+isNullOrEmpty.test(name);
+
