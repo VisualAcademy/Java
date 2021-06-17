@@ -1,13 +1,15 @@
 class SelectionSort {
-	// ÇÊµå
+	// í•„ë“œ
 	private int[] data; 
-	// »ı¼ºÀÚ
+
+	// ìƒì„±ì
 	public SelectionSort(int[] data) {
-		this.data = data; // this.ÇÊµå = ¸Å°³º¯¼ö;
+		this.data = data; // this.í•„ë“œ = ë§¤ê°œë³€ìˆ˜;
 	}
-	// ¸Ş¼Òµå
+
+	// ë©”ì„œë“œ
 	public void sorting() {
-		// ¼±ÅÃ Á¤·Ä ¾Ë°í¸®ÁòÀ» ±¸Çö
+		// ì„ íƒ ì •ë ¬ ì•Œê³ ë¦¬ì¦˜ì„ êµ¬í˜„
 		int temp = 0;
 		for (int i = 0; i < data.length - 1; i++) {
 			for (int j = i + 1; j < data.length; j++) {
@@ -19,15 +21,17 @@ class SelectionSort {
 			}
 		}
 	}
-	// ¸Ş¼­µå
+
+	// ë©”ì„œë“œ
 	public void print() {
 		for (int i = 0; i < data.length; i++) {
 			System.out.println(data[i]);
 		}
 	}
-	// toString() ¸Ş¼Òµå ¿À¹ö¶óÀÌµå(Override;ÀçÁ¤ÀÇ;»õ·Ó°Ô(New)Á¤ÀÇ)
+
+	// toString() ë©”ì†Œë“œ ì˜¤ë²„ë¼ì´ë“œ(Override;ì¬ì •ì˜;ìƒˆë¡­ê²Œ(New)ì •ì˜)
 	public String toString() {
-		return "»õ·Ó°Ô ¸¸µç ³ª¸¸ÀÇ toString() ¸Ş¼­µå";
+		return "ìƒˆë¡­ê²Œ ë§Œë“  ë‚˜ë§Œì˜ toString() ë©”ì„œë“œ";
 	}
 }
 
@@ -35,12 +39,15 @@ public class ToStringDemo {
 	public static void main(String[] args) {
 		//[1] Input
 		int[] data = {3, 2, 5, 1, 4}; 
+
 		//[2] Process
 		SelectionSort ss = new SelectionSort(data);
-		ss.sorting(); // ¿À¸§Â÷¼ø Á¤·Ä
+		ss.sorting(); // ì˜¤ë¦„ì°¨ìˆœ ì •ë ¬
+
 		//[3] Output
 		ss.print(); 
-		//[4] ÀÎ½ºÅÏ½º¸í Ãâ·Â
+
+		//[4] ì¸ìŠ¤í„´ìŠ¤ëª… ì¶œë ¥
 		System.out.printf("%s %s\n", ss, ss.toString()); 
 	}
 }
