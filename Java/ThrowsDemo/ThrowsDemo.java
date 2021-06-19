@@ -1,4 +1,4 @@
-// 사용자 정의 예외 처리ㅣ
+// 사용자 정의 예외 처리
 class MyException extends Exception {
 	public MyException(String msg) {
 		super(msg); // 예외 문자열 전달
