@@ -1,7 +1,7 @@
-// »ç¿ëÀÚ Á¤ÀÇ ¿¹¿Ü Ã³¸®¤Ó
+// ì‚¬ìš©ì ì •ì˜ ì˜ˆì™¸ ì²˜ë¦¬ã…£
 class MyException extends Exception {
 	public MyException(String msg) {
-		super(msg); // ¿¹¿Ü ¹®ÀÚ¿­ Àü´Ş
+		super(msg); // ì˜ˆì™¸ ë¬¸ìì—´ ì „ë‹¬
 	}
 }
 
@@ -11,15 +11,15 @@ public class ThrowsDemo {
 			System.out.println(divide(3, 0)); // 3 / 0 => X
 		}
 		catch (MyException me) {
-			System.out.println(me.getMessage()); // ¿¹¿Ü ¸Ş½ÃÁö Ãâ·Â
-			me.printStackTrace(); // ¿¹¿Ü Ã³¸® ´Ü°è Ãâ·Â
+			System.out.println(me.getMessage()); // ì˜ˆì™¸ ë©”ì‹œì§€ ì¶œë ¥
+			me.printStackTrace(); // ì˜ˆì™¸ ì²˜ë¦¬ ë‹¨ê³„ ì¶œë ¥
 		}
 	}
 	
 	public static int divide(int a, int b) throws MyException {
-		// »ç¿ëÀÚ Á¤ÀÇ ¿¹¿Ü Ã³¸®
+		// ì‚¬ìš©ì ì •ì˜ ì˜ˆì™¸ ì²˜ë¦¬
 		if (b == 0) {
-			throw new MyException("0À¸·Î ³ª´­ ¼ö ¾ø½À´Ï´Ù.");
+			throw new MyException("0ìœ¼ë¡œ ë‚˜ëˆŒ ìˆ˜ ì—†ìŠµë‹ˆë‹¤.");
 		}
 		
 		return a / b; 
