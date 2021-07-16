@@ -4,7 +4,7 @@ public class Algorithm_Count_Money {
         int money = 66666; // 입력 받은 화폐
         int won = 50000;
         int cnt = 0; 
-        int sw = 0; 
+        int sw = 0; // 스위치 변수: 5로 나눌건지 2로 나눌건지 결정
         for (int i = 0; i < 10; i++) {
             cnt = money / won; 
             System.out.printf("%,6d원 : %,6d매\n", won, cnt);
