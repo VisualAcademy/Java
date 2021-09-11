@@ -1,4 +1,4 @@
-// instanceof ¿¬»êÀÚ
+// instanceof ì—°ì‚°ì
 class Parent {
 	
 }
@@ -12,23 +12,25 @@ class Child2 extends Parent {
 public class InstanceOfDemo {
 	public static void main(String[] args) {
 		Parent p = new Parent();
-		// Æ¯Á¤ Å¬·¡½ºÀÇ ÀÎ½ºÅÏ½ºÀÎÁö ¾Æ´ÑÁö¸¦ È®ÀÎ? instanceof
+		// íŠ¹ì • í´ë˜ìŠ¤ì˜ ì¸ìŠ¤í„´ìŠ¤ì¸ì§€ ì•„ë‹Œì§€ë¥¼ í™•ì¸? instanceof
 		if (p instanceof Parent) {
-			System.out.println("p °´Ã¼´Â Parent Å¬·¡½ºÀÇ ÀÎ½ºÅÏ½ºÀÌ´Ù.");
+			System.out.println("p ê°ì²´ëŠ” Parent í´ë˜ìŠ¤ì˜ ì¸ìŠ¤í„´ìŠ¤ì´ë‹¤.");
 		}
+
 		Child1 c1 = new Child1();
 		Child2 c2 = new Child2();
 		if (c1 instanceof Parent) {
-			System.out.println("c1 °´Ã¼´Â Parent Å¬·¡½ºÀÇ ÀÎ½ºÅÏ½ºÀÌ´Ù.");
+			System.out.println("c1 ê°ì²´ëŠ” Parent í´ë˜ìŠ¤ì˜ ì¸ìŠ¤í„´ìŠ¤ì´ë‹¤.");
 		}
 		if (c2 instanceof Parent) {
-			System.out.println("c2 °´Ã¼´Â Parent Å¬·¡½ºÀÇ ÀÎ½ºÅÏ½ºÀÌ´Ù.");
+			System.out.println("c2 ê°ì²´ëŠ” Parent í´ë˜ìŠ¤ì˜ ì¸ìŠ¤í„´ìŠ¤ì´ë‹¤.");
 		}
+		
 		if (p instanceof Child1) {
-			System.out.println("p °´Ã¼´Â Child1 Å¬·¡½ºÀÇ ÀÎ½ºÅÏ½ºÀÌ´Ù.");
+			System.out.println("p ê°ì²´ëŠ” Child1 í´ë˜ìŠ¤ì˜ ì¸ìŠ¤í„´ìŠ¤ì´ë‹¤.");
 		}
 		else {
-			System.out.println("p °´Ã¼´Â Child1 Å¬·¡½ºÀÇ ÀÎ½ºÅÏ½º°¡ ¾Æ´Õ´Ï´Ù.");			
+			System.out.println("p ê°ì²´ëŠ” Child1 í´ë˜ìŠ¤ì˜ ì¸ìŠ¤í„´ìŠ¤ê°€ ì•„ë‹™ë‹ˆë‹¤.");			
 		}
 	}
 }
