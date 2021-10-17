@@ -1,32 +1,32 @@
 public class RecursionDemo {
 
 	public static void main(String[] args) {
-		// Àç±Í È£ÃâÀ» »ç¿ëÇÏ¿© Factorial ±¸ÇÏ±â : 3! = 3 * 2 * 1 = 6
+		// ì¬ê·€ í˜¸ì¶œì„ ì‚¬ìš©í•˜ì—¬ Factorial êµ¬í•˜ê¸° : 3! = 3 * 2 * 1 = 6
 		System.out.println(3 * 2 * 1);		
 		System.out.println(FactorialFor(4)); // 24
-		System.out.println(Factorial(4)); // ±âÁØ
+		System.out.println(Factorial(4)); // ê¸°ì¤€
 		System.out.println(Fact(10));
 	}
 	
-	// 3Ç× ¿¬»êÀÚ¸¦ »ç¿ëÇÑ factorial ±¸ÇÏ±â
+	// 3í•­ ì—°ì‚°ìë¥¼ ì‚¬ìš©í•œ factorial êµ¬í•˜ê¸°
 	private static int Fact(int n)
 	{
 		return (n > 1) ? n * Fact(n - 1) : 1;
 	}	
 	
-	// Àç±Í ÇÔ¼ö¸¦ »ç¿ëÇÑ °è½Â ±¸ÇÏ±â ÇÔ¼ö
+	// ì¬ê·€ í•¨ìˆ˜ë¥¼ ì‚¬ìš©í•œ ê³„ìŠ¹ êµ¬í•˜ê¸° í•¨ìˆ˜
 	private static int Factorial(int n)
 	{
-		// Á¾·á
+		// ì¢…ë£Œ
 		if (n == 0 || n == 1)
 		{
-			return 1; // 0! => 1·Î ¼³Á¤			
+			return 1; // 0! => 1ë¡œ ì„¤ì •			
 		}
-		// Àç±ÍÈ£Ãâ
+		// ì¬ê·€í˜¸ì¶œ
 		return n * Factorial(n - 1); // n! = 4 * (4-1)  
 	}
 	
-	// ÆÑÅä¸®¾óÀ» ÀÏ¹İÀûÀÎ ÄÚµå·Î »ç¿ë
+	// íŒ©í† ë¦¬ì–¼ì„ ì¼ë°˜ì ì¸ ì½”ë“œë¡œ ì‚¬ìš©
 	private static int FactorialFor(int n)
 	{
 		int result = 1;
