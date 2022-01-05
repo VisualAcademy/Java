@@ -1,8 +1,6 @@
 // StringBuffer 클래스: 문자열 묶고 추가 또는 삭제 등의 명령어 제공
-public class StringBufferDemo
-{
-    public static void main(String args[])
-    {
+public class StringBufferDemo {
+    public static void main(String args[]) {
         //[!] StringBuffer 클래스: 긴 문자열 묶을 때 효과적
         //[1] 50자 정도의 문자열을 받을 수 있는 그릇(버퍼) 생성 
         StringBuffer sb = new StringBuffer(50);
