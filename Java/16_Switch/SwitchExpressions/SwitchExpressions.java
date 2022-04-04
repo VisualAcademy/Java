@@ -1,5 +1,5 @@
 // switch 문: 선택문
-public class SwitchExpression {
+public class SwitchExpressions {
     public static void main(String[] args) {
         int x = 2;
 
