@@ -30,7 +30,7 @@ public class SearchAlgorithm {
 
         //[3] Output
         if (flag) {
-            System.out.println(search + "를 " + index + "위치에서 찾았습니다.");
+            System.out.println(search + "을(를) " + index + "위치에서 찾았습니다.");
         }
         else {
             System.out.println("찾지 못했습니다.");
