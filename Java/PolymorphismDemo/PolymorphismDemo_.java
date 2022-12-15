@@ -8,7 +8,7 @@ class Dog extends Animal {
 }
 class Crow extends Animal {
 	public String cry() {
-		return "까악가악"; 
+		return "까악까악"; 
 	}
 }
 class Trainer {
