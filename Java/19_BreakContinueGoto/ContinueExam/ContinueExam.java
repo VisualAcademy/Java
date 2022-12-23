@@ -1,3 +1,4 @@
+// 1부터 100까지 7의 배수를 제외한 수들의 합계를 구하는 프로그램
 public class ContinueExam {
     public static void main(String[] args) {
         int sum = 0; 

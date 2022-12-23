@@ -1,29 +1,29 @@
-// ¼öÇÐ °ü·Ã Å¬·¡½º
+// ìˆ˜í•™ ê´€ë ¨ í´ëž˜ìŠ¤
 public class MathDemo {
 	public static void main(String[] args) {
 
 		System.out.println(Math.PI); // 3.14
-		System.out.println(Math.abs(-10)); // Àý´ë°ª : 10
-		System.out.println(Math.max(10, 20)); // ÃÖ´ñ°ª 20
-		System.out.println(Math.min(10, 20)); // ÃÖ¼Ú°ª 10
-		System.out.println(Math.round(3.5415)); // ¹Ý¿Ã¸² 4
-		
-		// µÎÀÚ¸®±îÁö : ¿øº» * 100 / 100.0
+		System.out.println(Math.abs(-10)); // ì ˆëŒ€ê°’ : 10
+		System.out.println(Math.max(10, 20)); // ìµœëŒ“ê°’ 20
+		System.out.println(Math.min(10, 20)); // ìµœì†Ÿê°’ 10
+		System.out.println(Math.round(3.5415)); // ë°˜ì˜¬ë¦¼ 4
+
+		// ë‘ìžë¦¬ê¹Œì§€ : ì›ë³¸ * 100 / 100.0
 		double result = Math.round(3.156 * 100) / 100.0; // 3.16
 		System.out.println(result);
-		
+
 		// 2 ^ 10
 		System.out.println(Math.pow(2, 20)); // 1024, 1048576
-		
-		// ·£´ý°ª : random() : 0.0~1.0±îÁöÀÇ doubleÇü ½Ç¼ö¸¦ ¹ÝÈ¯
-		double dblResult = Math.random();		
+
+		// ëžœë¤ê°’ : random() : 0.0~1.0ê¹Œì§€ì˜ doubleí˜• ì‹¤ìˆ˜ë¥¼ ë°˜í™˜
+		double dblResult = Math.random();
 		System.out.println(dblResult);
-		// 0ºÎÅÍ 100±îÁöÀÇ Á¤¼ö°ªÀ» ·£´ýÇÏ°Ô Ãâ·Â
-		int intResult = (int)(Math.random() * 100); 
+		// 0ë¶€í„° 100ê¹Œì§€ì˜ ì •ìˆ˜ê°’ì„ ëžœë¤í•˜ê²Œ ì¶œë ¥
+		int intResult = (int) (Math.random() * 100);
 		System.out.println(intResult);
-		
-		System.out.println(Math.ceil(3.14)); // ceiling(ÃµÀå) À§·Î(¿Ã¸²) : 3.14=> 4.0
-		System.out.println(Math.floor(3.14)); // floor(¹Ù´Ú) ¾Æ·¡·Î(¹ö¸²) : 3.14 = 3.0
-		
+
+		System.out.println(Math.ceil(3.14)); // ceiling(ì²œìž¥) ìœ„ë¡œ(ì˜¬ë¦¼) : 3.14 => 4.0
+		System.out.println(Math.floor(3.14)); // floor(ë°”ë‹¥) ì•„ëž˜ë¡œ(ë²„ë¦¼) : 3.14 = 3.0
+
 	}
 }
