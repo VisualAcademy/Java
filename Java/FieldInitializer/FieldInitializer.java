@@ -16,6 +16,6 @@ public class FieldInitializer {
         // Say 클래스의 인스턴스 생성
         Say say = new Say();
         // hi() 메서드 호출
-        say.hi(); 
+        say.hi(); // 반갑습니다.
     }
 }
